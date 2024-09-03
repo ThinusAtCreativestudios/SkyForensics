@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-Thin.ttf");
+    src: url("./Inter_18pt-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-Light.ttf");
+    src: url("./Inter_18pt-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-Regular.ttf");
+    src: url("./Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-Medium.ttf");
+    src: url("./Inter_18pt-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-SemiBold.ttf");
+    src: url("./Inter_18pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-Bold.ttf");
+    src: url("./Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter_18pt-Black.ttf");
+    src: url("./Inter_18pt-Black.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
