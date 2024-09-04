@@ -82,25 +82,25 @@ services:
             - "${FORWARD_MAILHOG_DASHBOARD_PORT:-8025}:8025"
 
 
-    adminer:
-        image: adminer
-        container_name: adminer
-        restart: unless-stopped
-        depends_on:
-            - pgsql
-        ports:
-            - "8082:8080"
-        environment:
-            - ADMINER_AUTOLOGIN=1
-            - ADMINER_DB=${DB_DATABASE}
-            - ADMINER_DRIVER=pgsql
-            - ADMINER_PASSWORD=${DB_PASSWORD}
-            - ADMINER_SERVER=pgsql
-            - ADMINER_USERNAME=${DB_USERNAME}
-        volumes:
-            - 'sail-adminer:/var/www/html/index.php'
-        networks:
-            - sail
+#    adminer:
+#        image: adminer
+#        container_name: adminer
+#        restart: unless-stopped
+#        depends_on:
+#            - pgsql
+#        ports:
+#            - "8082:8080"
+#        environment:
+#            - ADMINER_AUTOLOGIN=1
+#            - ADMINER_DB=${DB_DATABASE}
+#            - ADMINER_DRIVER=pgsql
+#            - ADMINER_PASSWORD=${DB_PASSWORD}
+#            - ADMINER_SERVER=pgsql
+#            - ADMINER_USERNAME=${DB_USERNAME}
+#        volumes:
+#            - 'sail-adminer:/var/www/html/index.php'
+#        networks:
+#            - sail
 
 networks:
     sail:
