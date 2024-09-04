@@ -98,7 +98,6 @@ services:
             - ADMINER_SERVER=pgsql
             - ADMINER_USERNAME=${DB_USERNAME}
         volumes:
-            - ${INSTALL_PATH}${CONTAINERS_PATH}/adminer/index.php:/var/www/html/index.php
             - 'sail-adminer:/var/www/html/index.php'
         networks:
             - sail
