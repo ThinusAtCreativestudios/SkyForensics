@@ -9,7 +9,23 @@
     <meta name="description" content="Sky Forensics | Polygraph and Lie detection tests in the Garden Route">
     @vite('resources/css/app.css')
 </head>
-<body class="bg-[#0C0D0D] relative">
+
+@php
+    $popupIds = ['handleDiscreetly', 'uncoverHiddenThreats', 'confirmSuspicios'];
+@endphp
+
+<body data-overflow="true" class="bg-[#0C0D0D] relative data-[overflow=false]:overflow-hidden">
+
+    <script>
+        window.app = {
+            route: "{{ Route::currentRouteName() }}",
+            active: {},
+        }
+    </script>
+
+    @include('marketing.widgets.content.popups.discreetpopup', ['id' => $popupIds[0]])
+    @include('marketing.widgets.content.popups.hiddenthreatspopup', ['id' => $popupIds[1]])
+    @include('marketing.widgets.content.popups.suspicionpopup', ['id' => $popupIds[2]])
 
     <div class="relative overflow-hidden">
         <div class="absolute top-0 left-0 pointer-events-none">
@@ -24,7 +40,7 @@
 
         <div class="relative">
             <div class="absolute -top-[80px] -left-[50px] blur-[50px] h-[150px] w-full z-[2] blur-divider"></div>
-            @include('marketing.widgets.content.features')
+            @include('marketing.widgets.content.features', ['ids' => $popupIds])
         </div>
     </div>
     @include('marketing.widgets.content.howwedoit')
@@ -32,5 +48,6 @@
     @include('marketing.widgets.content.whatyouget')
     @include('marketing.widgets.content.bottomcta')
     @include('marketing.widgets.content.footer')
+    @vite('resources/js/app.js')
 </body>
 </html>

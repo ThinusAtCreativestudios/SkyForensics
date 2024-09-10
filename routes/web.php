@@ -3,4 +3,4 @@
 use App\Http\Controllers\Marketing\MarketingController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [MarketingController::class, 'home']);
+Route::get('/', [MarketingController::class, 'home'])->name('landing');
