@@ -13,32 +13,32 @@
         </p>
 
         <div class="flex overflow-hidden md:grid w-full md:grid-cols-3 md:grid-rows-2 mt-[40px] md:mt-[75px] gap-8 lg:gap-16">
-            <a class="col-span-1 flex justify-start"
+            <a class="col-span-1 flex justify-start items-center"
                 href="#"
                 title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
                 @include('marketing.widgets.vectors.brands.takealot', ['class'=> 'h-[30px] lg:h-[40px]'])
             </a>
-            <a class="col-span-1 flex justify-center"
+            <a class="col-span-1 flex justify-center items-center"
+                href="#"
+                title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
+                @include('marketing.widgets.vectors.brands.premierfoods', ['class'=> 'w-[196px] lg:w-[210px]'])
+            </a>
+            <a class="col-span-1 flex justify-end items-center"
                 href="#"
                 title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
                 @include('marketing.widgets.vectors.brands.takealot', ['class'=> 'h-[30px] lg:h-[40px]'])
             </a>
-            <a class="col-span-1 flex justify-end"
+            <a class="col-span-1 flex justify-start items-center"
                 href="#"
                 title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
                 @include('marketing.widgets.vectors.brands.takealot', ['class'=> 'h-[30px] lg:h-[40px]'])
             </a>
-            <a class="col-span-1 flex justify-start"
+            <a class="col-span-1 flex justify-center items-center"
                 href="#"
                 title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
                 @include('marketing.widgets.vectors.brands.takealot', ['class'=> 'h-[30px] lg:h-[40px]'])
             </a>
-            <a class="col-span-1 flex justify-center"
-                href="#"
-                title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
-                @include('marketing.widgets.vectors.brands.takealot', ['class'=> 'h-[30px] lg:h-[40px]'])
-            </a>
-            <a class="col-span-1 flex justify-end"
+            <a class="col-span-1 flex justify-end items-center"
                 href="#"
                 title="Sky Forensics helps TakeALot manage their internal risk and solve complex crime">
                 @include('marketing.widgets.vectors.brands.takealot', ['class'=> 'h-[30px] lg:h-[40px]'])
