@@ -4,5 +4,4 @@
 - Install composer on the machine
 - clone project
 - run `composer install`
-- run `composer install`
 - run `./vendor/bin/sail npm install`

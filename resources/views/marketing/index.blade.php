@@ -11,7 +11,7 @@
 </head>
 
 @php
-    $popupIds = ['handleDiscreetly', 'uncoverHiddenThreats', 'confirmSuspicios'];
+    $popupIds = ['handleDiscreetly', 'uncoverHiddenThreats', 'confirmSuspicious'];
 @endphp
 
 <body data-overflow="true" class="bg-[#0C0D0D] relative data-[overflow=false]:overflow-hidden">
